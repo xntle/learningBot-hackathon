@@ -1,3 +1,48 @@
+// 'use client';
+
+// import React, { useState } from 'react';
+// import synthesizeSpeech from '../../utils/synthesizeSpeech';
+
+// const ElevenLabsSpeech = () => {
+//   const [text, setText] = useState('It sure does, Jackie… My mama always said: “In Carolina, the air\'s so thick you can wear it!”');
+//   const [audioUrl, setAudioUrl] = useState(null);
+
+//   const handleSynthesize = async () => {
+//     const url = await synthesizeSpeech(text);
+//     console.log('Received audio URL:', url); // Should now log the correct audio URL
+//     setAudioUrl(url);
+
+//     if (url) {
+//       const audio = new Audio(url);
+//       audio.play().catch(error => console.error('Audio playback failed:', error));
+//     }
+//   };
+
+//   return (
+//     <div>
+//       <h1>ElevenLabs Text-to-Speech</h1>
+//       <textarea
+//         value={text}
+//         onChange={(e) => setText(e.target.value)}
+//         rows="4"
+//         cols="50"
+//         placeholder="Enter text to synthesize"
+//       />
+//       <button onClick={handleSynthesize}>
+//         Synthesize Speech
+//       </button>
+//       {audioUrl && (
+//         <div>
+//           <p>Playing audio...</p>
+//           <audio controls src={audioUrl} />
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default ElevenLabsSpeech;
+
 
 'use client';
 
