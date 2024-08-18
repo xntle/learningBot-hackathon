@@ -1,0 +1,61 @@
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMicrophone, faStop } from "@fortawesome/free-solid-svg-icons";
+
+const Chatbot = () => {
+  return (
+    <div className="min-h-screen bg-light-yellow text-dark-blue flex flex-col items-center inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:8rem_4rem] font-skrapbook">
+      
+      {/* Navigation Bar */}
+      <div className="text-2xl font-skrapbook font-bold text-yellow mt-4">
+        Talkaroo
+      </div>
+
+      {/* Chatbot Face Section */}
+      <header className="flex flex-col justify-start items-center text-center h-screen px-4 pt-24">
+        <div className="mt-10 relative w-100 h-100 mb-6 rounded-full bg-light-yellow flex items-center justify-center">
+            <img src="/talk-close.png" alt="Chatbot Face" className="w-72 h-72" />
+        </div>
+        <h1 className="text-4xl text-yellow font-extrabold mb-6">
+          Press Record to get started!
+        </h1>
+        <div className="flex space-x-4">
+          <button className="bg-yellow hover:bg-blue text-white font-semibold py-2 px-6 rounded-full shadow-lg transition duration-300">
+            <FontAwesomeIcon icon={faMicrophone} className="h-5 w-5" />
+          </button>
+          <button className="bg-yellow hover:bg-blue text-white font-semibold py-2 px-6 rounded-full shadow-lg transition duration-300">
+            <FontAwesomeIcon icon={faStop} className="h-5 w-5" />
+          </button>
+        </div>
+      </header>
+
+      {/* How It Works Section */}
+      <section className="mb-20 mt-10 px-4 lg:px-0 max-w-5xl text-center">
+        <h2 className="text-4xl font-semibold mb-12 text-dark-blue">How I Work</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
+          <div className="bg-light-yellow p-8 rounded-lg shadow-lg hover:bg-blue transition duration-300 text-dark-blue">
+            <h3 className="text-2xl font-bold mb-4">1. Record Your Voice</h3>
+            <p>Press the record button and speak. I'll listen attentively.</p>
+          </div>
+          <div className="bg-light-yellow p-8 rounded-lg shadow-lg hover:bg-blue transition duration-300 text-dark-blue">
+            <h3 className="text-2xl font-bold mb-4">2. Real-Time Responses</h3>
+            <p>I'll analyze your speech and respond instantly for a smooth conversation.</p>
+          </div>
+          <div className="bg-light-yellow p-8 rounded-lg shadow-lg hover:bg-blue transition duration-300 text-dark-blue">
+            <h3 className="text-2xl font-bold mb-4">3. Personalization</h3>
+            <p>The more you talk to me, the better I understand you, making our chats more personalized!</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="w-full py-8 bg-yellow text-center text-light-yellow">
+        <p className="text-sm">
+          © 2024 Talkaroo. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  );
+};
+
+export default Chatbot;

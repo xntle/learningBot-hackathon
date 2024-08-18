@@ -1,4 +1,8 @@
+
 import React from "react";
+import Link from "next/link";
+
+
 
 const HomePage = () => {
   return (
@@ -18,9 +22,12 @@ const HomePage = () => {
         <p className="text-lg mb-8 max-w-2xl mx-auto animate-fadeIn delay-2s">
           I can speak many different languages 😄 Do you wanna to know many languages too? 
         </p>
+        <Link href="/chatbot">
+
         <button className="bg-yellow hover:bg-blue text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 animate-fadeIn delay-3s">
           Let's Chat 💙
         </button>
+        </Link>
       </header>
 
 
@@ -51,9 +58,13 @@ const HomePage = () => {
         <p className="text-lg mb-8 animate-fadeIn delay-11s text-dark-blue">
           What are you waiting for, talk to me pleaseee pretty pleasee
         </p>
+        <Link href="/chatbot">
         <button className="bg-yellow hover:bg-blue text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 animate-fadeIn delay-12s">
           Start Talking 💬
         </button>
+        </Link>
+
+
       </section>
 
       {/* Footer */}
