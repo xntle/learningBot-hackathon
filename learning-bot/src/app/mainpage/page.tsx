@@ -9,7 +9,8 @@ const HomePage = () => {
     <div className="min-h-screen bg-light-yellow text-dark-blue flex flex-col items-center inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:8rem_4rem] font-skrapbook">
       {/* Background Grid */}
       <div className="absolute bg-light-yellow inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:8rem_4rem]"></div>
-      
+      <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
+        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)]"></div></div>
       {/* Navigation Bar */}
       <div className="text-2xl font-skrapbook font-bold text-yellow mt-4">Talkaroo</div>
 
@@ -23,15 +24,14 @@ const HomePage = () => {
           I can speak many different languages 😄 Do you wanna to know many languages too? 
         </p>
         <Link href="/chatbot">
-
-        <button className="bg-yellow hover:bg-blue text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 animate-fadeIn delay-3s">
-          Let's Chat 💙
-        </button>
+            <button className=" hover-gradient text-whitey font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 animate-fadeIn delay-3s">
+                Let's Chat 💙
+            </button>
         </Link>
       </header>
 
 
-      {/* How It Works Section */}
+      {/* How I Work */}
       <section className="mt-32 px-4 lg:px-0 max-w-5xl text-center">
       <div className="absolute bg-light-yellow inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:8rem_4rem]"></div>
 
@@ -52,14 +52,14 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Call to Action Section */}
+      {/* CTA */}
       <section className="mt-32 mb-32 px-4 lg:px-0 max-w-5xl text-center">
         <h2 className="text-4xl font-semibold mb-12 animate-fadeIn delay-10s text-dark-blue">Can't wait to talk to you 😄</h2>
         <p className="text-lg mb-8 animate-fadeIn delay-11s text-dark-blue">
           What are you waiting for, talk to me pleaseee pretty pleasee
         </p>
         <Link href="/chatbot">
-        <button className="bg-yellow hover:bg-blue text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 animate-fadeIn delay-12s">
+        <button className=" hover-gradient text-whitey font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 animate-fadeIn delay-3s">
           Start Talking 💬
         </button>
         </Link>

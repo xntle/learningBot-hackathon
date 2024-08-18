@@ -14,8 +14,12 @@ const config: Config = {
       'blue': '#dde1fa',
       'dark-blue': '#040232',
       'yellow': '#e1800a ',
+      'whitey': '#ffffff',
     },
     extend: {
+      fontFamily: {
+        skrapbook: ['Skrapbook', 'sans-serif'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
