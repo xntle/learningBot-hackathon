@@ -49,34 +49,34 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMicrophone, faStop } from "@fortawesome/free-solid-svg-icons";
-import synthesizeSpeech from '../../utils/synthesizeSpeech'; // Adjust the import path as needed
+// import synthesizeSpeech from '../../utils/synthesizeSpeech'; // Adjust the import path as needed
 
 const Chatbot = () => {
-    const [text, setText] = useState('');
-    const [audioUrl, setAudioUrl] = useState(null);
-    const [isRecording, setIsRecording] = useState(false);
+    // const [text, setText] = useState('');
+    // const [audioUrl, setAudioUrl] = useState(null);
+    // const [isRecording, setIsRecording] = useState(false);
 
-    const handleTextChange = (e) => {
-        setText(e.target.value);
-    };
+    // const handleTextChange = (e) => {
+    //     setText(e.target.value);
+    // };
 
-    const handleSynthesize = async () => {
-        if (text.trim() === '') return; // Prevent sending empty text
-        setIsRecording(true);
-        const url = await synthesizeSpeech(text);
-        setAudioUrl(url);
-        const audio = new Audio(url);
-        audio.play();
-        setIsRecording(false);
-    };
+    // const handleSynthesize = async () => {
+    //     if (text.trim() === '') return; // Prevent sending empty text
+    //     setIsRecording(true);
+    //     const url = await synthesizeSpeech(text);
+    //     setAudioUrl(url);
+    //     const audio = new Audio(url);
+    //     audio.play();
+    //     setIsRecording(false);
+    // };
 
-    const handleStop = () => {
-        setIsRecording(false);
-        if (audioUrl) {
-            const audio = new Audio(audioUrl);
-            audio.pause();
-        }
-    };
+    // const handleStop = () => {
+    //     setIsRecording(false);
+    //     if (audioUrl) {
+    //         const audio = new Audio(audioUrl);
+    //         audio.pause();
+    //     }
+    // };
 
     return (
         <div className="min-h-screen bg-light-yellow text-dark-blue flex flex-col items-center inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:8rem_4rem] font-skrapbook">
@@ -95,7 +95,7 @@ const Chatbot = () => {
                     Enter text and press "Send" to hear it!
                 </h1>
                 
-                {/* Input Field for Text */}
+                {/* Input Field for Text
                 <div className="flex flex-col items-center space-y-4 mb-8">
                     <input
                         type="text"
@@ -111,18 +111,18 @@ const Chatbot = () => {
                     >
                         Send
                     </button>
-                </div>
+                </div> */}
 
                 <div className="flex space-x-4">
                     <button 
-                        onClick={handleSynthesize} 
-                        disabled={isRecording} 
+                        // onClick={handleSynthesize} 
+                        // disabled={isRecording} 
                         className="hover-gradient text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 animate-fadeIn delay-3s"
                     >
                         <FontAwesomeIcon icon={faMicrophone} className="h-5 w-5" />
                     </button>
                     <button 
-                        onClick={handleStop} 
+                        // onClick={handleStop} 
                         className="hover-gradient text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 animate-fadeIn delay-3s"
                     >
                         <FontAwesomeIcon icon={faStop} className="h-5 w-5" />
