@@ -1,6 +1,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from 'next/image';
 
 
 
@@ -16,7 +17,7 @@ const HomePage = () => {
 
       {/* Hero Section */}
       <header className=" flex flex-col justify-center items-center text-center h-screen px-4">
-      <img src="/talkaroo.gif" alt="Talkaroo" className="w-64 h-64 mb-6" />
+      <Image src="/talkaroo.gif" alt="Talkaroo" className="w-64 h-64 mb-6" />
         <h1 className="text-6xl text-yellow font-extrabold mb-6 animate-fadeIn">
         🦘 Hi! I'm Talkaroo! 🦘   
         </h1>
