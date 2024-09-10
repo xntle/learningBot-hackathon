@@ -90,7 +90,3 @@ To run Talkaroo locally, follow these steps:
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
----
-
-Now the **Introduction** includes the statistic on reading proficiency to provide context on the challenges children face, and how Talkaroo aims to bridge that gap.
